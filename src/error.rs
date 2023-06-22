@@ -582,6 +582,8 @@ impl ErrorKind {
             InvalidData => "invalid data",
             InvalidInput => "invalid input parameter",
             Other => "other error",
+            ConnectionAborted => "connection aborted",
+            BrokenPipe => "broken pipe",
             Uncategorized => "uncategorized error",
             UnexpectedEof => "unexpected end of file",
             WriteZero => "write zero",
