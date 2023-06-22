@@ -552,6 +552,7 @@ pub enum ErrorKind {
     WriteZero,
     ConnectionAborted,
     BrokenPipe,
+    TimedOut,
     /// A custom error that does not fall under any other I/O error kind.
     ///
     /// This can be used to construct your own [`Error`]s that do not match any
@@ -584,6 +585,7 @@ impl ErrorKind {
             Other => "other error",
             ConnectionAborted => "connection aborted",
             BrokenPipe => "broken pipe",
+            TimedOut => "connection timed out",
             Uncategorized => "uncategorized error",
             UnexpectedEof => "unexpected end of file",
             WriteZero => "write zero",
