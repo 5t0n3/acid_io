@@ -550,6 +550,8 @@ pub enum ErrorKind {
     /// [`write`]: crate::Write::write
     /// [`Ok(0)`]: Ok
     WriteZero,
+    ConnectionAborted,
+    BrokenPipe,
     /// A custom error that does not fall under any other I/O error kind.
     ///
     /// This can be used to construct your own [`Error`]s that do not match any
